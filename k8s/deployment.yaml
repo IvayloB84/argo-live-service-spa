@@ -34,10 +34,10 @@ spec:
           resources:
             requests:
               cpu: "25m"
-              memory: "16Mi"
+              memory: "32Mi"
             limits:
               cpu: "150m"
-              memory: "32Mi"
+              memory: "64Mi"
 
         # 2. Automated Git-Sync Synchronization Engine Layer
         - name: git-sync-sidecar
@@ -58,10 +58,10 @@ spec:
           resources:
             requests:
               cpu: "10m"
-              memory: "16Mi"
+              memory: "32Mi"
             limits:
               cpu: "50m"
-              memory: "32Mi"
+              memory: "64Mi"
 
       volumes:
         - name: code-stream-volume
